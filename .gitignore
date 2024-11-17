@@ -502,6 +502,8 @@ dist-schema/
 !.yarn/sdks
 !.yarn/versions
 
+.angular/
+
 # IDEs
 jsconfig.json
 
