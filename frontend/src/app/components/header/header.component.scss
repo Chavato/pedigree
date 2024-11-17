@@ -1,0 +1,45 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 2rem;
+  background-color: var(--black);
+  color: var(--white);
+
+  font-weight: bolder;
+
+  .logo {
+
+    margin-left: 2rem;
+
+    img {
+      width: 3rem;
+      height: 3rem;
+    }
+  }
+
+  .nav {
+    .nav-list {
+      display: flex;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+      .nav-item {
+        margin-left: 3rem;
+
+        .nav-link {
+          color: var(--white);
+          text-decoration: none;
+          font-size: 1rem;
+          transition: color 0.3s;
+
+          &:hover {
+            color: var(--primary-hover);
+            /* Cor de hover para links */
+          }
+        }
+      }
+    }
+  }
+}
