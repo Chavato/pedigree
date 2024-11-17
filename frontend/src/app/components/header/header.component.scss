@@ -1,3 +1,8 @@
+.active {
+  font-weight: bold;
+  color: #ff7b00;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -36,7 +41,6 @@
 
           &:hover {
             color: var(--primary-hover);
-            /* Cor de hover para links */
           }
         }
       }
