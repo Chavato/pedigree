@@ -10,22 +10,12 @@
         display: flex;
         justify-content: space-around;
         align-items: center;
+        margin: 0.5rem 0;
 
         .social-links {
             display: flex;
             gap: 1.5rem;
             align-items: center;
-
-            .social-icon {
-                color: var(--white);
-                text-decoration: none;
-                font-size: 1rem;
-                transition: color 0.3s;
-
-                &:hover {
-                    color: var(--primary-hover);
-                }
-            }
         }
 
         .contact-info {
