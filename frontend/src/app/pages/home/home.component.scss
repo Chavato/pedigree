@@ -1,0 +1,83 @@
+.intro {
+    text-align: center;
+    padding: 2rem 1rem;
+    background-color: var(--dark-gray);
+    color: var(--white);
+
+    .intro-title {
+        font-size: 2.5rem;
+        font-weight: bold;
+        margin-bottom: 1.5rem;
+        color: var(--primary-color);
+    }
+
+    .intro-content {
+        max-width: 600px;
+        margin: 0 auto;
+        font-size: 1.2rem;
+        line-height: 1.6;
+        text-align: justify;
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+        .intro-link {
+            color: var(--accent-color);
+            font-weight: bold;
+            text-decoration: none;
+            border-bottom: 2px solid transparent;
+            transition: color 0.3s, border-color 0.3s;
+
+            &:hover {
+                color: var(--primary-hover);
+                border-color: var(--primary-hover);
+            }
+        }
+    }
+}
+
+.testimony {
+    margin-top: 2rem;
+    text-align: center;
+
+    .testimony-title {
+        font-size: 2rem;
+        color: var(--primary-color);
+        /* Cor para destacar o título */
+        margin-bottom: 1rem;
+    }
+
+    .testimony-list {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        /* Espaçamento entre os depoimentos */
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .testimony-item {
+        padding: 1rem;
+        background-color: var(--medium-gray);
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: left;
+
+        .testimony-text {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            color: var(--white);
+        }
+
+        .testimony-author {
+            display: block;
+            margin-top: 0.5rem;
+            font-style: italic;
+            font-size: 1rem;
+            color: var(--accent-color);
+        }
+    }
+
+    
+}
