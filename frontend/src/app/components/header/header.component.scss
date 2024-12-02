@@ -9,18 +9,18 @@
   align-items: center;
   background-color: var(--black);
   color: var(--white);
-  height: 3rem; 
-  position: fixed; 
-  top: 0; 
-  left: 0; 
-  width: 100%; 
-  z-index: 1000; 
+  height: 3rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
 
   font-weight: bolder;
 
   .logo {
 
-    margin-left: 2rem;
+    margin: 0 2rem;
 
     img {
       width: 3rem;
@@ -36,7 +36,7 @@
       margin: 0 1rem;
 
       .nav-item {
-        margin-left: 3rem;
+        margin: 0 1.5rem;
 
         .nav-link {
           color: var(--white);
