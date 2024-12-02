@@ -9,12 +9,12 @@
   align-items: center;
   background-color: var(--black);
   color: var(--white);
-  height: 3rem; /* Define altura fixa */
-  position: fixed; /* Fixa o header no topo da janela */
-  top: 0; /* Garante que o header fique no topo */
-  left: 0; /* Alinhado à esquerda */
-  width: 100%; /* Ocupa toda a largura */
-  z-index: 1000; /* Garante que fique acima de outros elementos */
+  height: 3rem; 
+  position: fixed; 
+  top: 0; 
+  left: 0; 
+  width: 100%; 
+  z-index: 1000; 
 
   font-weight: bolder;
 
