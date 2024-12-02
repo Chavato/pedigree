@@ -13,8 +13,12 @@ body {
     justify-content: space-between;
 }
 
-main{
-    min-height: 80vh; 
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 85vh;
 }
 
 h1,
