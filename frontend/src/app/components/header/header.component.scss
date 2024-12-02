@@ -7,11 +7,15 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.5rem 2rem;
   background-color: var(--black);
   color: var(--white);
-  min-height: 5vh; 
-
+  height: 3rem; /* Define altura fixa */
+  position: fixed; /* Fixa o header no topo da janela */
+  top: 0; /* Garante que o header fique no topo */
+  left: 0; /* Alinhado à esquerda */
+  width: 100%; /* Ocupa toda a largura */
+  z-index: 1000; /* Garante que fique acima de outros elementos */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Adiciona um sombreamento para destaque */
 
   font-weight: bolder;
 
@@ -30,7 +34,7 @@
       display: flex;
       list-style: none;
       padding: 0;
-      margin: 0;
+      margin: 0 1rem;
 
       .nav-item {
         margin-left: 3rem;
