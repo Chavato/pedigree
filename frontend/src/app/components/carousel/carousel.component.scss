@@ -1,0 +1,46 @@
+.carousel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+
+    .carousel-inner {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+    }
+
+    .carousel-item {
+        display: flex; /* Ativa o Flexbox */
+        justify-content: center; /* Centraliza horizontalmente */
+        align-items: center; /* Centraliza verticalmente */
+        min-width: 100%;
+        overflow: hidden; /* Para evitar partes da imagem ultrapassarem o container */
+      
+        img {
+          display: block;
+          width: 100%;
+          object-fit: cover; /* Ajusta a proporção da imagem */
+          height: auto; /* Mantém a altura proporcional */
+        }
+      }
+      
+
+    .carousel-control {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: rgba(0, 0, 0, 0.5);
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        font-size: 4rem;
+        z-index: 10;
+
+        &.prev {
+            left: 10px;
+        }
+
+        &.next {
+            right: 10px;
+        }
+    }
+}
