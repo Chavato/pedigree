@@ -32,6 +32,10 @@ export class CarouselComponent implements OnDestroy {
     }, { phase: AfterRenderPhase.Write });
   }
 
+  goToSlide(index: number): void {
+    this.currentSlide = index;
+  }
+
   nextSlide(): void {
     this.currentSlide = (this.currentSlide + 1) % this.images.length;
   }

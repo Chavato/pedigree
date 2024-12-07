@@ -9,20 +9,26 @@
     }
 
     .carousel-item {
-        display: flex; /* Ativa o Flexbox */
-        justify-content: center; /* Centraliza horizontalmente */
-        align-items: center; /* Centraliza verticalmente */
+        display: flex;
+        /* Ativa o Flexbox */
+        justify-content: center;
+        /* Centraliza horizontalmente */
+        align-items: center;
+        /* Centraliza verticalmente */
         min-width: 100%;
-        overflow: hidden; /* Para evitar partes da imagem ultrapassarem o container */
-      
+        overflow: hidden;
+        /* Para evitar partes da imagem ultrapassarem o container */
+
         img {
-          display: block;
-          width: 100%;
-          object-fit: cover; /* Ajusta a proporção da imagem */
-          height: auto; /* Mantém a altura proporcional */
+            display: block;
+            width: 100%;
+            object-fit: cover;
+            /* Ajusta a proporção da imagem */
+            height: auto;
+            /* Mantém a altura proporcional */
         }
-      }
-      
+    }
+
 
     .carousel-control {
         position: absolute;
@@ -41,6 +47,26 @@
 
         &.next {
             right: 10px;
+        }
+    }
+
+    .dots-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        max-height: 30px;
+
+        .dot {
+            font-size: 60px;
+            color: var(--white);
+            height: 100%;
+            cursor: pointer;
+
+            &:hover {
+                color: var(--primary-hover);
+                font-size: 80px;
+            }
         }
     }
 }
