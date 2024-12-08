@@ -52,12 +52,17 @@
 
         .dot {
             font-size: 60px;
-            color: var(--white);
+            color: var(--light-gray);
             height: 100%;
             cursor: pointer;
 
             &:hover {
                 color: var(--primary-hover);
+                font-size: 80px;
+            }
+
+            &.active {
+                color: var(--white);
                 font-size: 80px;
             }
         }
