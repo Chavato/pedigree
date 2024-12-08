@@ -3,6 +3,7 @@ import { HeaderComponent } from '../../components/header/header.component';
 import { FooterComponent } from '../../components/footer/footer.component';
 import { RouterLink } from '@angular/router';
 import { CarouselComponent } from "../../components/carousel/carousel.component";
+import { ImageInterface } from "../../models/ImageInterface";
 
 @Component({
   selector: 'app-home',
@@ -12,12 +13,11 @@ import { CarouselComponent } from "../../components/carousel/carousel.component"
   styleUrl: './home.component.scss'
 })
 export class HomeComponent {
-  carouselImages: string[] =
-    ["assets/gallery/aereo-bowl-mute.jpg",
-      "assets/gallery/backside-torque-corrimao-rua.jpg",
-      "assets/gallery/pedigree-bowl.jpg",
-      "assets/gallery/soul-corrimao-rua.jpg",
-      "assets/gallery/topsoul-corrimao-rua.jpg"
+  carouselImages: ImageInterface[] =
+    [
+      { url: "assets/gallery/aereo-bowl-mute.jpg", title: "aereo-bowl" },
+      { url: "assets/gallery/backside-torque-corrimao-rua.jpg", title: "backside-torque" },
+      { url: "assets/gallery/pedigree-bowl.jpg", title: "bowl" }
     ]
 
 }

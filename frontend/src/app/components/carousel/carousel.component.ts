@@ -1,5 +1,6 @@
 import { Component, Input, OnDestroy, AfterRenderPhase, afterNextRender, NgZone } from '@angular/core';
 import { NgFor } from '@angular/common';
+import { ImageInterface } from '../../models/ImageInterface';
 
 @Component({
   selector: 'app-carousel',
@@ -9,7 +10,7 @@ import { NgFor } from '@angular/common';
   styleUrl: './carousel.component.scss'
 })
 export class CarouselComponent implements OnDestroy {
-  @Input() images: string[] = [];
+  @Input() images: ImageInterface[] = [];
   currentSlide: number = 0;
 
   private timer: any;

@@ -1,7 +1,7 @@
 <div class="carousel">
     <div class="carousel-inner" [style.transform]="'translateX(-' + currentSlide * 100 + '%)'">
         <div *ngFor="let image of images; let i = index" class="carousel-item" [class.active]="i === currentSlide">
-            <img [src]="image" [alt]="'Slide ' + (i + 1)" />
+            <img [src]="image.url" [alt]="image.title" />
         </div>
     </div>
     <button class="carousel-control prev" (click)="prevSlide()">&#10094;</button>

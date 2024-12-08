@@ -1,5 +1,5 @@
 .carousel {
-    position: relative;
+    position: relative; 
     width: 100%;
     overflow: hidden;
 
@@ -11,7 +11,7 @@
     .carousel-item {
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: flex-start;
         min-width: 100%;
         overflow: hidden;
 
