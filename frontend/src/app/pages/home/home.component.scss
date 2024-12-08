@@ -1,17 +1,23 @@
-.intro {
+.intro,
+.class,
+.testimony {
     text-align: center;
-    padding: 2rem 1rem;
     background-color: var(--dark-gray);
     color: var(--white);
+    margin-top: 2rem;
 
-    .intro-title {
+    .intro-title,
+    .class-title,
+    .testimony-title {
         font-size: 2.5rem;
         font-weight: bold;
-        margin-bottom: 1.5rem;
-        color: var(--primary-color);
+        margin: 0 0 1.5rem;
+        // margin-bottom: 1.5rem;
+        color: var(--white);
     }
 
-    .intro-content {
+    .intro-content,
+    .class-content {
         max-width: 600px;
         margin: 0 auto;
         font-size: 1.2rem;
@@ -34,18 +40,6 @@
                 border-color: var(--primary-hover);
             }
         }
-    }
-}
-
-.testimony {
-    margin-top: 2rem;
-    text-align: center;
-
-    .testimony-title {
-        font-size: 2rem;
-        color: var(--primary-color);
-        /* Cor para destacar o título */
-        margin-bottom: 1rem;
     }
 
     .testimony-list {
@@ -75,9 +69,7 @@
             margin-top: 0.5rem;
             font-style: italic;
             font-size: 1rem;
-            color: var(--accent-color);
+            color: var(--white);
         }
     }
-
-    
 }
