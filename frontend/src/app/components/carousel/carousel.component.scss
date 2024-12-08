@@ -12,13 +12,13 @@
         display: flex;
         justify-content: center;
         align-items: flex-start;
-        min-width: 100%;
         overflow: hidden;
+        min-width: 100%;
 
         img {
             display: block;
-            width: 100%;
             object-fit: cover;
+            max-width: 100%;
             height: auto;
         }
     }

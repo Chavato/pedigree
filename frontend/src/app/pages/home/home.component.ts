@@ -16,8 +16,10 @@ export class HomeComponent {
   carouselImages: ImageInterface[] =
     [
       { url: "assets/gallery/aereo-bowl-mute.jpg", title: "aereo-bowl" },
+      { url: "assets/gallery/pedigree-bowl.jpg", title: "bowl" },
       { url: "assets/gallery/backside-torque-corrimao-rua.jpg", title: "backside-torque" },
-      { url: "assets/gallery/pedigree-bowl.jpg", title: "bowl" }
+      { url: "assets/gallery/soul-corrimao-rua.jpg", title: "soul-corrimao" },
+      { url: "assets/gallery/topsoul-corrimao-rua.jpg", title: "topsoul-corrimao-rua" }
     ]
 
 }
