@@ -26,26 +26,12 @@
                 e descubra como começar a deslizar com confiança e segurança.
             </p>
         </div>
-        <div class="testimony">
-            <h2 class="testimony-title title">Depoimentos</h2>
-            <div class="testimony-list">
-                <article class="testimony-item">
-                    <p class="testimony-text">"O professor Pedro me ajudou a superar o medo de patinar. Hoje, me sinto
-                        confiante e mais feliz!"</p>
-                    <span class="testimony-author">– Ana Clara</span>
-                </article>
-                <article class="testimony-item">
-                    <p class="testimony-text">"Aprender patins com o Pedigree foi incrível! Ele tem uma paciência e
-                        energia únicas."</p>
-                    <span class="testimony-author">– Lucas Mendes</span>
-                </article>
-            </div>
-        </div>
+        <app-testimony [testimonyList]="testimonyList"/>
     </section>
 
-    <section class="intro">
-        <h1 class="intro-title title">Patrocínio / Apoio</h1>
-        <div class="intro-content">
+    <section class="sponsorship">
+        <h1 class="sponsorship-title title">Patrocínio / Apoio</h1>
+        <div class="sponsorship-content">
             <p>
                 Caso queira saber mais detalhes sobre as vantagens e como me patrocinar/apoiar, <a
                     routerLink="/sponsorship" class="intro-link">clique aqui</a>.

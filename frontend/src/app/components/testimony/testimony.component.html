@@ -1,0 +1,13 @@
+<div class="testimony">
+    @if (testimonyList.length > 0) {
+    <h2 class="testimony-title title">Depoimentos</h2>
+    }
+    <div class="testimony-list">
+        @for (testimony of testimonyList; track $index) {
+        <article class="testimony-item">
+            <p class="testimony-text">{{testimony.text}}</p>
+            <span class="testimony-author">– {{testimony.author}}</span>
+        </article>
+        }
+    </div>
+</div>

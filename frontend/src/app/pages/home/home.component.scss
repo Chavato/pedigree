@@ -1,6 +1,6 @@
 .intro,
 .class,
-.testimony {
+.sponsorship {
     text-align: center;
     background-color: var(--dark-gray);
     color: var(--white);
@@ -14,8 +14,9 @@
     }
 
     .intro-content,
-    .class-content {
-        max-width: 600px;
+    .class-content,
+    .sponsorship-content {
+        max-width: 60vw;
         margin: 0 auto;
         font-size: 1.2rem;
         line-height: 1.6;
@@ -35,37 +36,6 @@
                 color: var(--primary-hover);
                 border-color: var(--primary-hover);
             }
-        }
-    }
-
-    .testimony-list {
-        display: flex;
-        flex-direction: column;
-        gap: 1.5rem;
-        /* Espaçamento entre os depoimentos */
-        max-width: 800px;
-        margin: 0 auto;
-    }
-
-    .testimony-item {
-        padding: 1rem;
-        background-color: var(--medium-gray);
-        border-radius: 8px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        text-align: left;
-
-        .testimony-text {
-            font-size: 1.2rem;
-            line-height: 1.6;
-            color: var(--white);
-        }
-
-        .testimony-author {
-            display: block;
-            margin-top: 0.5rem;
-            font-style: italic;
-            font-size: 1rem;
-            color: var(--white);
         }
     }
 }

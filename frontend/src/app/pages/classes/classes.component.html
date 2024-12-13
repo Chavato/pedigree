@@ -1,10 +1,31 @@
 <app-header />
 <main>
-    <ul>
-        <li>sobre as aulas</li>
-        <li>depoimentos</li>
-        <li>horario</li>
-        <li>pacotes de aulas</li>
-    </ul>
+    <section class="class-section">
+        <h1 class="class-title">Aulas</h1>
+        <div class="class-content">
+            <p>
+                Seja você um iniciante curioso ou um patinador experiente buscando aperfeiçoar suas habilidades, minhas
+                aulas de patins são feitas para todas as idades e níveis de experiência. Juntos, vamos explorar a
+                liberdade, o equilíbrio e a diversão que só o patins pode proporcionar!
+            </p>
+            <app-carousel [images]="carouselImages" />
+            <h2>Horários</h2>
+            <p>
+                As aulas são em grupo ou individual, com a duração de 1 hora. Podendo ser de segunda a sexta entre 17h e
+                21h.
+                <a target="_blank" class="link" href="https://api.whatsapp.com/message/6Q5TGEDC2DUGN1">Agenda já a sua
+                    aula!</a>
+            </p>
+            <h2>Pacotes</h2>
+            <p>
+                Atualmente temos os pacotes:
+            </p>
+            <ul class="class-package">
+                <li>4 aulas por R$160</li>
+                <li>8 aulas por R$300</li>
+            </ul>
+        </div>
+    </section>
+    <app-testimony [testimonyList]="testimonyList" />
 </main>
 <app-footer />
