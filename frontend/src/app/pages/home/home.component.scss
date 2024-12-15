@@ -33,8 +33,9 @@
             transition: color 0.3s, border-color 0.3s;
 
             &:hover {
-                color: var(--primary-hover);
-                border-color: var(--primary-hover);
+                color: var(--white);
+                background-color: var(--medium-gray);
+                border-radius: 5px;
             }
         }
     }
