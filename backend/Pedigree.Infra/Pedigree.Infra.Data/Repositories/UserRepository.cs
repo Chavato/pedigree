@@ -107,9 +107,7 @@ namespace Pedigree.Infra.Data.Repositories
             var result = await _userManager.CreateAsync(user, password);
 
             if (!result.Succeeded)
-            {
-                throw new Exception(result.Errors.FirstOrDefault()!.Description);
-            }
+                throw new ArgumentException(result.Errors.FirstOrDefault()!.Description);
 
             await _signInManager.SignInAsync(user, false);
         }

@@ -3,10 +3,14 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Pedigree.Application.Interfaces;
 using Pedigree.Application.Profiles;
+using Pedigree.Application.Services;
+using Pedigree.Domain.Interfaces.Repositories;
 using Pedigree.Infra.Data.Context;
 using Pedigree.Infra.Data.Identity;
 using Pedigree.Infra.Data.Profiles;
+using Pedigree.Infra.Data.Repositories;
 
 namespace Pedigree.Infra.IoC
 {
@@ -18,6 +22,8 @@ namespace Pedigree.Infra.IoC
             services.AddAutoMapper(typeof(InfrastructureMappingProfile), typeof(ApplicationMappingProfile));
 
             services.ConfigureDatabase(configuration);
+
+            services.AddHttpContextAccessor();
 
             services.AddDependencyInjectionRepositories();
             services.AddDependencyInjectionServices();
@@ -49,7 +55,7 @@ namespace Pedigree.Infra.IoC
 
         private static IServiceCollection AddDependencyInjectionRepositories(this IServiceCollection services)
         {
-
+            services.AddScoped<IUserRepository, UserRepository>();
 
             return services;
         }
@@ -57,6 +63,8 @@ namespace Pedigree.Infra.IoC
         private static IServiceCollection AddDependencyInjectionServices(this IServiceCollection services)
         {
 
+            services.AddScoped<IUserService, UserService>();
+            services.AddScoped<IUserInformation, UserInformation>();
             return services;
         }
     }
