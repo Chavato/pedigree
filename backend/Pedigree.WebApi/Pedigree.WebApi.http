@@ -1,0 +1,6 @@
+@Pedigree.WebApi_HostAddress = http://localhost:5279
+
+GET {{Pedigree.WebApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
