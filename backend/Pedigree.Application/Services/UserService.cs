@@ -8,7 +8,7 @@ using Pedigree.Domain.Interfaces.Repositories;
 
 namespace Pedigree.Application.Services
 {
-public class UserService : IUserService
+    public class UserService : IUserService
     {
         private readonly IUserRepository _userRepository;
         private readonly IUserInformation _userInformation;
@@ -26,11 +26,11 @@ public class UserService : IUserService
             return result;
         }
 
-        public async Task ChangePasswordAsync(ChangePasswordDTO changePassword, string userName)
+        public async Task ChangePasswordAsync(ChangePasswordDTO changePassword, string email)
         {
-            ApplicationUserDTO user = await _userInformation.GetUserByNameAsync(userName);
+            ApplicationUserDTO user = await _userInformation.GetUserByEmailAsync(email);
 
-            if (await _userRepository.AuthenticateUserByUserNameAsync(userName, changePassword.OldPassword))
+            if (await _userRepository.AuthenticateUserByEmailAsync(email, changePassword.OldPassword))
                 await _userRepository.ChangePasswordAsync(user.Id, changePassword.NewPassword);
 
             else
@@ -46,6 +46,12 @@ public class UserService : IUserService
         public async Task DeleteUserByNameAsync(string userName)
         {
             await _userRepository.DeleteUserByNameAsync(userName);
+        }
+
+        public async Task DeleteUserByEmailAsync(string email)
+        {
+
+            await _userRepository.DeleteUserByEmailAsync(email);
         }
 
         public async Task<ApplicationUserDTO> GetUserByEmailAsync(string userName)

@@ -7,6 +7,7 @@ namespace Pedigree.Domain.Interfaces.Repositories
         Task RegisterUserAsync(string userName, string email, string password);
         Task UpdateUserAsync(string id, string email);
         Task DeleteUserByIdAsync(string userId);
+        Task DeleteUserByEmailAsync(string email);
         Task DeleteUserByNameAsync(string userName);
         Task ChangePasswordAsync(string id, string newPassword);
         Task LogoutAsync();

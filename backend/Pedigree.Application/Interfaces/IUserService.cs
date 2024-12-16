@@ -11,6 +11,7 @@ namespace Pedigree.Application.Interfaces
         Task<ApplicationUserDTO> UpdateUserAsync(ApplicationUserDTO applicationUser);
         Task DeleteUserByIdAsync(string userId);
         Task DeleteUserByNameAsync(string userName);
+        Task DeleteUserByEmailAsync(string email);
         Task ChangePasswordAsync(ChangePasswordDTO changePassword, string userName);
         Task LogoutAsync();
     }

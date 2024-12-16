@@ -1,4 +1,6 @@
 using AutoMapper;
+using Pedigree.Application.Models.DTOs;
+using Pedigree.Infra.Data.Identity;
 
 namespace Pedigree.Infra.Data.Profiles
 {
@@ -6,7 +8,7 @@ namespace Pedigree.Infra.Data.Profiles
     {
         public InfrastructureMappingProfile()
         {
-            
+            CreateMap<ApplicationUserDTO, ApplicationUser>().ReverseMap();
         }
     }
 }

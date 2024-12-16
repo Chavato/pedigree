@@ -95,6 +95,20 @@ namespace Pedigree.Infra.Data.Repositories
 
         }
 
+        public async Task DeleteUserByEmailAsync(string email)
+        {
+            ApplicationUser? user = await _userManager.FindByEmailAsync(email);
+
+            if (user == null)
+                throw new EntityNotFoundException("User not found.");
+
+            var result = await _userManager.DeleteAsync(user);
+
+            if (!result.Succeeded)
+                throw new Exception("Something was wrong.");
+
+        }
+
         public async Task LogoutAsync()
         {
             await _signInManager.SignOutAsync();

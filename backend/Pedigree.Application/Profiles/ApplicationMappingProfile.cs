@@ -1,4 +1,5 @@
 using AutoMapper;
+using Pedigree.Application.Models.DTOs;
 
 namespace Pedigree.Application.Profiles
 {
@@ -6,7 +7,6 @@ namespace Pedigree.Application.Profiles
     {
         public ApplicationMappingProfile()
         {
-            
         }
     }
 }

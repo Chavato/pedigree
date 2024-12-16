@@ -180,12 +180,12 @@ namespace Pedigree.WebApi.Controllers
         {
             try
             {
-                string? userName = HttpContext.User.Identity!.Name;
+                string? email = HttpContext.User.Identity!.Name;
 
-                if (userName == null)
+                if (email == null)
                     throw new Exception("Problem with access user name.");
 
-                await _userService.DeleteUserByNameAsync(userName);
+                await _userService.DeleteUserByEmailAsync(email);
 
                 return NoContent();
             }
