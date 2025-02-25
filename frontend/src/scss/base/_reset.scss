@@ -5,7 +5,6 @@ body {
 
 body {
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
-    padding-top: 10vh;
     min-height: 100vh;
     margin: 0;
     background-color: var(--dark-gray);
@@ -13,10 +12,6 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
-    @media (max-width: 700px) {
-        padding-top: calc(5vh + 1rem);
-    }
 }
 
 main {
@@ -26,6 +21,12 @@ main {
     flex-direction: column;
     min-height: 85vh;
 }
+
+// @media (max-width: 530px) {
+//     main {
+//         padding-top: 200px;
+//     }
+// }
 
 h1,
 h2,
